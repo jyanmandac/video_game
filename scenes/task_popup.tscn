@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cmwgs2bd5j5w0"]
+
+[ext_resource type="Script" uid="uid://do5u7ksmrvyca" path="res://scripts/task_popup.gd" id="1_rxpt3"]
+
+[node name="TaskPopup" type="CanvasLayer" unique_id=1303302708]
+script = ExtResource("1_rxpt3")
+
+[node name="Panel" type="Label" parent="." unique_id=1967095162]
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 500.0
+offset_bottom = 320.0
+
+[node name="VBox" type="VBoxContainer" parent="Panel" unique_id=1992792974]
+custom_minimum_size = Vector2(380, 200)
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 50.0
+
+[node name="Question" type="Label" parent="Panel/VBox" unique_id=1961816631]
+layout_mode = 2
+
+[node name="Answer" type="LineEdit" parent="Panel/VBox" unique_id=1455552523]
+layout_mode = 2
+
+[node name="Submit" type="Button" parent="Panel/VBox" unique_id=160296087]
+layout_mode = 2
+text = "Submit"
+
+[node name="Feedback" type="Label" parent="Panel/VBox" unique_id=2147393385]
+layout_mode = 2
