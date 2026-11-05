@@ -119,17 +119,25 @@ position = Vector2(592, 416)
 position = Vector2(592, 560)
 script = ExtResource("4_xilxc")
 target_scene = "uid://bgvehcbuwc4ub"
-target_spawn_name = "FromOutO&C"
+target_spawn_name = "FromOutSSPF"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorToSSPF" unique_id=2068106871]
 shape = SubResource("RectangleShape2D_2slhv")
 
+[node name="OutSSPF" type="Marker2D" parent="." unique_id=314587262]
+position = Vector2(608, 560)
+
 [node name="DoorToOPF" type="Area2D" parent="." unique_id=1862458841]
 position = Vector2(784, 312)
 script = ExtResource("4_xilxc")
+target_scene = "uid://dy5ftmmadf8fc"
+target_spawn_name = "FromOutOPF"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorToOPF" unique_id=1887107207]
 shape = SubResource("RectangleShape2D_2slhv")
+
+[node name="FromInOPF" type="Marker2D" parent="." unique_id=135119218]
+position = Vector2(784, 328)
 
 [node name="DoorIntoVAB" type="Area2D" parent="." unique_id=1986775239]
 position = Vector2(832, 432)
