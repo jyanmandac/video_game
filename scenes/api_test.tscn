@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cdlv7jjtipjgo"]
+
+[ext_resource type="Script" uid="uid://dmnn3sbu1ew3r" path="res://scripts/api_test.gd" id="1_5od8w"]
+
+[node name="Node2D" type="Node2D" unique_id=1775699214]
+script = ExtResource("1_5od8w")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1502435577]

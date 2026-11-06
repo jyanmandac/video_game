@@ -8,6 +8,7 @@ var time_left := 0.0
 var running := false
 var tasks_total := 2
 var tasks_done := 0
+var current_level := 1
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -24,6 +25,7 @@ func complete_task() -> void:
 	if tasks_done >= tasks_total:
 		running = false
 		all_tasks_done.emit()
+		ApiClient.send_result(current_level, "pass")
 
 func _process(delta: float) -> void:
 	if not running:
@@ -34,3 +36,4 @@ func _process(delta: float) -> void:
 		running = false
 		time_up.emit()
 		print("Time is up")
+		ApiClient.send_result(current_level, "fail")

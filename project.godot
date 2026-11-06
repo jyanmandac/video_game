@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 Game="*uid://bfobejwjqtgxa"
 HUD="*uid://b2kwrdp06ooir"
 TaskPopup="*uid://cmwgs2bd5j5w0"
+ApiClient="*uid://dutxapio1r4rl"
 
 [display]
 

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://me8wtib0hfod"]
+
+[ext_resource type="Script" uid="uid://nh432llcbacu" path="res://scripts/history_screen.gd" id="1_fa43n"]
+
+[node name="Control" type="Control" unique_id=1273373618]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fa43n")
+
+[node name="Label" type="Label" parent="." unique_id=2015852090]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
